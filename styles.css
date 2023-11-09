@@ -1,0 +1,69 @@
+html {
+  box-sizing: border-box;
+}
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  /* background-color: #D4ADFC; */
+}
+.form {
+  --primary: #610C9F;
+  --secondary: #D4ADFC;
+  --neutro: #fff;
+  --radius: .3em;
+
+  padding: 1.5em 1em;
+  max-inline-size: 25rem;
+  background-color: var(--secondary);
+}
+.input-el {
+  inline-size: 100%;
+  padding: .5em 1em;
+  font-family: inherit;
+  font-weight: 500;
+  color: var(--primary);
+  border: .1em solid var(--primary);
+  border-radius: var(--radius);
+}
+.btn-wrapper {
+  margin-top: 1em;
+  display: flex;
+  justify-content: space-between;
+}
+.btn {
+  padding: .5em .8em;
+  font-weight: 600;
+  font-size: .95rem;
+  text-transform: uppercase;
+  letter-spacing: .5px;
+  color: var(--neutro);
+  background-color: var(--primary);
+  border: .1em solid var(--primary);
+  border-radius: var(--radius);
+  transition: color .2s ease-in-out, background-color .2s ease-in-out;
+  cursor: pointer;
+}
+.btn--delete {
+  color: var(--primary);
+  background-color: var(--neutro);
+}
+
+.input-el:focus-visible,
+.btn:focus-visible {
+  outline: .15em dotted var(--primary);
+  outline-offset: .15em;
+}
+
+@media (hover:hover) {
+  .btn:hover {
+    color: var(--primary);
+    background-color: var(--neutro);
+  }
+  .btn--delete:hover {
+    color: var(--neutro);
+    background-color: var(--primary);
+  }
+}

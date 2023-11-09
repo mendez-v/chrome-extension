@@ -5,14 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="./assets/img/fav.svg">
   <title>Save URL's 💾</title>
+  <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
   <main>
-    <form action="#" id="form" autocomplete="off">
+    <form action="#" id="form" class="form" autocomplete="off">
       <input type="text" class="input-el">
-      <button id="input-btn">save input</button>
-      <button id="tab-btn">save tabs</button>
-      <button id="delete-btn">delete all</button>
+      <div class="btn-wrapper">
+        <button id="input-btn" class="btn">save input</button>
+        <button id="tab-btn" class="btn">save tab</button>
+        <button type="reset" id="delete-btn" class="btn btn--delete">delete all</button>
+      </div>
     </form>
   </main>
 </body>
