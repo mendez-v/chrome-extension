@@ -9,7 +9,7 @@ body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   /* background-color: #D4ADFC; */
 }
-.form {
+.form-el {
   --primary: #610C9F;
   --secondary: #D4ADFC;
   --neutro: #fff;
@@ -53,6 +53,9 @@ body {
 .ul-el {
   list-style: none;
   padding-left: 0;
+}
+.link {
+  color: var(--primary);
 }
 
 .input-el:focus-visible,
