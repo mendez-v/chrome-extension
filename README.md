@@ -1,5 +1,5 @@
-# Build a Chrome Extension
-This is a section of the ["Learn JavaScript"](https://scrimba.com/learn/learnjavascript) course by [Scrimba](https://scrimba.com/).
+# Desarrollar una Chrome Extension
+Esto es parte del curso ["Learn JavaScript"](https://scrimba.com/learn/learnjavascript) por [Scrimba](https://scrimba.com/).
 
 ![Preview](./assets/vid/preview.gif)
 
@@ -96,4 +96,4 @@ chrome.tabs.query ( {active: true, currentWindow: true}, function(tabs) {
 ```
 
 ## Recursos útiles
-🖼 Icon - [Filter](https://iconscout.com/icons/filter) by [Mohit Gandhi](https://iconscout.com/contributors/mcgandhi61) on [IconScout](https://iconscout.com)
+🖼 Ícono - [Filter](https://iconscout.com/icons/filter) by [Mohit Gandhi](https://iconscout.com/contributors/mcgandhi61) on [IconScout](https://iconscout.com)
