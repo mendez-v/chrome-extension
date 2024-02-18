@@ -1,0 +1,98 @@
+html {
+  box-sizing: border-box;
+}
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+
+:root {
+  --clr-1: #CDF5FD;
+  --clr-2: #00A9FF;
+  --clr-3: #001F3F;
+}
+.sr-only {
+  position: absolute;
+  top: 0;
+  left: -150vw;
+  font-size: 1px;
+  inline-size: 1px;
+  opacity: 0;
+}
+
+.body {
+  margin: 0;
+  padding: 1rem;
+  inline-size: 28rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color: var(--clr-1);
+  color: var(--clr-3);
+}
+.form-el {
+  display: grid;
+  gap: 1rem;
+  font-size: 1rem;
+}
+.input-el {
+  padding: .6rem 1rem;
+  inline-size: 100%;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 500;
+  border: .12rem solid var(--clr-3);
+  border-radius: .4rem;
+  color: inherit;
+  background-color: transparent;
+}
+.btn-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.btn {
+  inline-size: 8rem;
+  padding-block: .8rem;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 700;
+  background-color: var(--clr-2);
+  color: inherit;
+  border: none;
+  border-radius: .4rem;
+  border: .15rem solid currentColor;
+  transition: background-color .3s ease, color .3s ease, border-color .3s ease, transform .2s ease;
+}
+.btn--delete {
+  background-color: transparent;
+}
+.list {
+  margin: 0;
+  padding-left: 0;
+  display: grid;
+  gap: 1rem;
+  list-style-type: none;
+  font-size: inherit;
+}
+
+.list__cta {
+  font-size: inherit;
+  font-weight: 500;
+  text-decoration-thickness: .1rem;
+  text-underline-offset: .3rem;
+}
+
+.input-el:focus-visible {
+  outline-color: var(--clr-2);
+}
+
+
+@media (hover:hover) {
+  .btn:hover {
+    background-color: var(--clr-3);
+    color: var(--clr-2);
+    border-color: transparent;
+  }
+}
+.btn:active {
+  transform: scale(.95);
+}
