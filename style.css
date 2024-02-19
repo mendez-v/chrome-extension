@@ -72,6 +72,7 @@ html {
   gap: 1rem;
   list-style-type: none;
   font-size: inherit;
+  word-wrap: break-word;
 }
 
 .list__cta {
@@ -81,8 +82,9 @@ html {
   text-underline-offset: .3rem;
 }
 
-.input-el:focus-visible {
-  outline-color: var(--clr-2);
+:focus-visible {
+  outline: .15rem dotted var(--clr-3);
+  outline-offset: .2rem;
 }
 
 
